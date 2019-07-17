@@ -12,9 +12,21 @@
   *zoom: 1;
 }
 
-
+/*文字居中*/
+.text-c {
+  text-align: center;
+}
+.va-m {
+  vertical-align: middle;
+}
  
 /*字号设置*/
+.fz32 {
+  font-size: 32px;
+}
+.fz30 {
+  font-size: 30px;
+}
 .fz28 {
   font-size:28px;
 }
@@ -26,6 +38,9 @@
 }
 .fz20 {
   font-size:20px;
+}
+.fz18 {
+  font-size: 18px;
 }
 .fz14 {
   font-size: 14px;
@@ -53,7 +68,12 @@
 .bg-de {
   background-color: #dedede;
 }
-
+.bf-fc {
+  background-color: #fcfcfc;
+}
+.bf-f4 {
+  background-color: #f4f4f4;
+}
 
 
 
@@ -69,4 +89,35 @@
 }
 .c-999 {
   color: #999;
+}
+
+/*间距*/
+
+.ml-20 {
+  margin-left: 20px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.pd-10 {
+  padding: 10px;
+}
+.pd-20 {
+  padding: 20px;
+}
+
+
+/*定位*/
+
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
 }

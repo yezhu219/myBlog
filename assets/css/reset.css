@@ -45,6 +45,9 @@ table{
   border-collapse: collapse;
   border-spacing: 0;
 }
+input,textarea {
+  outline: none;
+}
 
 /* custom */
 a{
@@ -78,6 +81,4 @@ body{
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-html{
-  overflow-y: scroll;
-}
+
