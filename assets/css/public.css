@@ -1,126 +1,166 @@
- 
-/*清除浮动*/
-.clearfix:before,
-.clearfix:after{
-  content: " ";
-  display: inline-block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-.clearfix{
-  *zoom: 1;
-}
+ /*清除浮动*/
+ .clearfix:before,
+ .clearfix:after {
+   content: " ";
+   display: inline-block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+ }
 
-/*文字居中*/
-.text-c {
-  text-align: center;
-}
-.va-m {
-  vertical-align: middle;
-}
- 
-/*字号设置*/
-.fz32 {
-  font-size: 32px;
-}
-.fz30 {
-  font-size: 30px;
-}
-.fz28 {
-  font-size:28px;
-}
-.fz24 {
-  font-size:24px;
-}
-.fz22 {
-  font-size:20px;
-}
-.fz20 {
-  font-size:20px;
-}
-.fz18 {
-  font-size: 18px;
-}
-.fz14 {
-  font-size: 14px;
-}
-.fz12 {
-  font-size: 12px;
-}
-.fw-600 {
-  font-weight: 600;
-}
-.fw-400 {
-  font-weight: 400;
-}
+ .clearfix {
+   *zoom: 1;
+ }
 
+ /*文字居中*/
+ .text-c {
+   text-align: center;
+ }
 
+ .va-m {
+   vertical-align: middle;
+ }
 
-/*背景色*/
-.bg-f {
-  background-color: #fff;
-}
+ /*字号设置*/
+ .fz32 {
+   font-size: 32px;
+ }
 
-.bg-c {
-  background-color: #ccc;
-}
-.bg-de {
-  background-color: #dedede;
-}
-.bg-fc {
-  background-color: #fcfcfc;
-}
-.bg-f4 {
-  background-color: #f4f4f4;
-}
-.bg-f6 {
-  background-color: #f6f6f6;
-}
+ .fz30 {
+   font-size: 30px;
+ }
+
+ .fz28 {
+   font-size: 28px;
+ }
+
+ .fz24 {
+   font-size: 24px;
+ }
+
+ .fz22 {
+   font-size: 20px;
+ }
+
+ .fz20 {
+   font-size: 20px;
+ }
+
+ .fz18 {
+   font-size: 18px;
+ }
+
+ .fz16 {
+   font-size: 16px;
+ }
+
+ .fz14 {
+   font-size: 14px;
+ }
+
+ .fz12 {
+   font-size: 12px;
+ }
+
+ .fw-600 {
+   font-weight: 600;
+ }
+
+ .fw-400 {
+   font-weight: 400;
+ }
+
+ /* 行高*/
+ .lh-1 {
+   line-height: 1.2;
+ }
 
 
+ /*背景色*/
+ .bg-f {
+   background-color: #fff;
+ }
 
-/*颜色*/
-.c-fff {
-  color: #fff;
-}
-.c-333 {
-  color: #333;
-}
-.c-666 {
-  color: #666;
-}
-.c-999 {
-  color: #999;
-}
+ .bg-c {
+   background-color: #ccc;
+ }
 
-/*间距*/
+ .bg-de {
+   background-color: #dedede;
+ }
 
-.ml-20 {
-  margin-left: 20px;
-}
-.ml-10 {
-  margin-left: 10px;
-}
-.mr-20 {
-  margin-right: 20px;
-}
-.mr-10 {
-  margin-right: 10px;
-}
-.pd-10 {
-  padding: 10px;
-}
-.pd-20 {
-  padding: 20px;
-}
+ .bg-fc {
+   background-color: #fcfcfc;
+ }
+
+ .bg-f4 {
+   background-color: #f4f4f4;
+ }
+
+ .bg-f6 {
+   background-color: #f6f6f6;
+ }
 
 
-/*定位*/
 
-.pr {
-  position: relative;
-}
-.pa {
-  position: absolute;
-}
+ /*颜色*/
+ .c-fff {
+   color: #fff;
+ }
+
+ .c-333 {
+   color: #333;
+ }
+
+ .c-666 {
+   color: #666;
+ }
+
+ .c-999 {
+   color: #999;
+ }
+
+ /*间距*/
+
+ .ml-20 {
+   margin-left: 20px;
+ }
+
+ .ml-10 {
+   margin-left: 10px;
+ }
+
+ .mr-20 {
+   margin-right: 20px;
+ }
+
+ .mr-10 {
+   margin-right: 10px;
+ }
+
+ .pd-10 {
+   padding: 10px;
+ }
+
+ .pd-20 {
+   padding: 20px;
+ }
+
+ .mb-10 {
+   margin-bottom: 10px;
+ }
+
+ .mb-20 {
+   margin-bottom: 20px;
+ }
+
+
+ /*定位*/
+
+ .pr {
+   position: relative;
+ }
+
+ .pa {
+   position: absolute;
+ }
