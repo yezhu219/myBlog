@@ -2,16 +2,27 @@ const mongoose = require('mongoose')
 
 const db=require('../db')
 
-const articleListSchema = new mongoose.Schema({
+const sfHotDaySchema = new mongoose.Schema({
   title: String,
-  from: String,
-  fromgImg: String,
-  date: String,
-  time: String,
-  content: String
+  date: {
+    type: Date,
+    default: Date.now()
+  },
+  desImg: String,
+  authorImg: String,
+  author: String,
+  content: String,
+  like: {
+    type: Number,
+    default: 0
+  },
+  view: {
+    type: Number,
+    default: 0
+  }
 })
 
-let articleListModel = db.model('articleList', articleListSchema)
+let articleListModel = db.model('sfHotDay', sfHotDaySchema)
 
 module.exports = articleListModel
 

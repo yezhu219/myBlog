@@ -1,5 +1,5 @@
 <template>
-  <div class="blog bg-fc">
+  <div class="blog">
     <b-header></b-header>
     <nuxt />
     <b-footer></b-footer>
@@ -20,7 +20,6 @@ export default {
 <style lang="less">
 .blog {
   width: 100%;
-  height: 100px;
 }
 
 </style>

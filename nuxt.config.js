@@ -33,12 +33,17 @@ module.exports = {
   */
   plugins: [
     '@/plugins/element-ui'
+
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
   ],
+  axios: {
+    // proxyHeaders: false
+  },
   /*
   ** Build configuration
   */

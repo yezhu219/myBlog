@@ -1,16 +1,17 @@
 <template>
-  <el-container class="b-article pd-10">
-    <el-aside width="250px">1</el-aside>
+  <el-container class="b-article bg-f pd-10">
+    <el-aside width="250px" v-if="article.desImg">
+      <img :src="article.desImg">
+    </el-aside>
     <el-main>
       <el-row>
-        <el-col>title</el-col>
-        <el-col>des</el-col>
+        <el-col>{{article.title}}</el-col>
+        <el-col>{{article.des}}</el-col>
         <el-col>
           <el-row>
-            <el-col>classify</el-col>
-            <el-col>time</el-col>
-            <el-col>view</el-col>
-            <el-col>like</el-col>
+            <el-col>{{article.createTime}}</el-col>
+            <el-col>{{article.view}}</el-col>
+            <el-col>{{article.like}}</el-col>
           </el-row>
         </el-col>
       </el-row>
@@ -21,12 +22,14 @@
 <script>
 export default {
   name: 'b-article',
+  props:{
+    article:{
+      type:Object,
+    }
+  },
   data() {
     return {
-      article: {
-        title: '',
-        des: ''
-      }
+      
     }
   }
 }
@@ -34,6 +37,6 @@ export default {
 
 <style lang="less">
 .b-article {
-  background-color: #ccc;
+
 }
 </style>
