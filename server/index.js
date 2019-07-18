@@ -2,6 +2,8 @@ const Koa = require('koa')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 
+const { router } = require('./interface/api')
+
 const app = new Koa()
 
 // Import and Set Nuxt.js options
@@ -24,6 +26,8 @@ async function start() {
   } else {
     await nuxt.ready()
   }
+
+app.use(router.routes()).use(router.allowedMethods())
 
   app.use((ctx) => {
     ctx.status = 200
