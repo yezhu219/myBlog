@@ -5,8 +5,8 @@
     </el-aside>
     <el-main>
       <el-row>
-        <el-col class="fz22 lh-1 c-333 mb-10">{{article.title}}</el-col>
-        <el-col class="fz14 lh-1 c-666 mb-10">{{article.des}}</el-col>
+        <el-col class="fz22 lh-1 c-666 mb-20 fw-600">{{article.title}}</el-col>
+        <el-col class="fz14 lh-1 c-666 mb-20">{{article.des}}</el-col>
         <el-col>
           <el-row class="article-info">
             <el-col :span="6" class="fz12 c-666">{{article.date | formateDate}}</el-col>
@@ -15,7 +15,7 @@
               {{article.view}}
             </el-col>
             <el-col :span="2" class="fz12 c-666">
-              <i class="el-icon-view fz16 adjust"></i>
+              <i class="el-icon-xin1 fz16 adjust"></i>
               {{article.like}}
             </el-col>
           </el-row>
@@ -63,9 +63,12 @@ export default {
           ? '0' + (date.getMonth() + 1)
           : date.getMonth() + 1) + '-'
       var D = date.getDate() + ' '
-      var h = date.getHours() + ':'
-      var m = date.getMinutes() + ':'
+      var h = date.getHours() 
+      h= h<10?'0'+h+':':h+":"
+      var m = date.getMinutes() 
+      m= m<10?'0'+m+':':m+":"
       var s = date.getSeconds()
+      s= s<10?'0'+s:s
       return Y + M + D + h + m + s
     }
   }

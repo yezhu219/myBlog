@@ -11,7 +11,7 @@
         <el-col :span="5">学习</el-col>
         <el-col :span="5">随笔</el-col>
         <el-col :span="5">分享</el-col>
-        <el-col :span="4">关于我</el-col>
+        <!-- <el-col :span="4">关于我</el-col> -->
       </el-row>
     </el-col>
     <el-col :span="4" v-show="showNav">

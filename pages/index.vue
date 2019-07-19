@@ -1,18 +1,30 @@
 <template>
   <div class="container bg-f6 ">
     <el-row :gutter="20">
-      <el-col :span="17" ><b-article v-for="item in list" :key="item._id" :article="item"></b-article></el-col>
-      <el-col :span="7" ><p class="bg-f">class="bg-f"</p></el-col>
+      <el-col :span="18" ><b-article v-for="item in list" :key="item._id" :article="item"></b-article></el-col>
+      <el-col :span="6" >
+        <el-row :gutter="20">
+          <el-col class="mb-20"><b-card></b-card></el-col>
+          <el-col class="mb-20"><b-join></b-join></el-col>
+          <el-col><b-hot></b-hot></el-col>
+        </el-row>
+      </el-col>
     </el-row>
   </div>
 </template>
 
 <script>
-import bArticle from "@/components/b-article";
+import bArticle from "@/components/b-article"
+import bJoin from '@/components/b-join'
+import bHot from '@/components/b-hot'
+import bCard from '@/components/b-card'
 export default {
   layout: "blog",
   components: {
-    bArticle
+    bArticle,
+    bJoin,
+    bHot,
+    bCard
   },
   data() {
     return {
@@ -30,7 +42,7 @@ export default {
 <style lang="less">
 .container {
   // padding-top: 20px;
-  padding: 20px 50px;
+  padding: 20px 60px;
 
 }
 </style>
