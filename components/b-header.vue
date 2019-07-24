@@ -7,10 +7,10 @@
     </el-col>
     <el-col :span="14" v-show="showNav">
       <el-row>
-        <el-col :span="5">首页</el-col>
-        <el-col :span="5">学习</el-col>
-        <el-col :span="5">随笔</el-col>
-        <el-col :span="5">分享</el-col>
+        <el-col :span="5"><nuxt-link to="/">首页</nuxt-link></el-col>
+        <el-col :span="5"><nuxt-link to="/learn">学习</nuxt-link></el-col>
+        <el-col :span="5"><nuxt-link to="/jotting">随笔</nuxt-link></el-col>
+        <el-col :span="5"><nuxt-link to="/share">分享</nuxt-link></el-col>
         <!-- <el-col :span="4">关于我</el-col> -->
       </el-row>
     </el-col>

@@ -7,7 +7,10 @@
     <el-row>
       <el-col :span="8" title="yezhu219"><i class="el-icon-weixin fz30"></i></el-col>
       <el-col :span="8" title="348821387"><i class="el-icon-qq fz30"></i></el-col>
-      <el-col :span="8" title="bing2619@163.com"><i class="el-icon-youxiang fz30" ></i></el-col>
+      <!-- <el-col :span="8" title="bing2619@163.com"><a href="mailto:bing2619@163.com"><i class="el-icon-youxiang fz30" ></i></a></el-col> -->
+      <el-col :span="8" title="bing2619@163.com">
+        <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=l6Sjr6_lpqSvoNfm5rn0_Po" ><i class="el-icon-youxiang fz30" ></i></a>
+      </el-col>
     </el-row>
  </el-row>
 </template>

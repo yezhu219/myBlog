@@ -1,5 +1,6 @@
 <template>
-  <el-container class="b-article bg-f pd-20 mb-20">
+ <nuxt-link :to="{path:'/detail',query:{id:article._id}}">
+    <el-container class="b-article bg-f pd-20 mb-20">
     <el-aside width="250px" v-if="article.desImg">
       <img :src="article.desImg" />
     </el-aside>
@@ -23,6 +24,7 @@
       </el-row>
     </el-main>
   </el-container>
+ </nuxt-link>
 </template>
 
 <script>

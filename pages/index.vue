@@ -6,7 +6,7 @@
         <el-row :gutter="20">
           <el-col class="mb-20"><b-card></b-card></el-col>
           <el-col class="mb-20"><b-join></b-join></el-col>
-          <el-col><b-hot></b-hot></el-col>
+          <el-col><b-hot :data=list></b-hot></el-col>
         </el-row>
       </el-col>
     </el-row>
@@ -32,8 +32,8 @@ export default {
     }
   },
   async asyncData({$axios}) {
+    console.log("++++++++++++++++++++++++++")
     const {data} = await $axios.get('http://localhost:3000/v1/articleList')
-    console.log(data.list,data.count)
     return { list: data.list,count:data.count }
   },
 };
