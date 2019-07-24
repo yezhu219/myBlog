@@ -20,6 +20,7 @@ export default {
 <style lang="less">
 .blog {
   width: 100%;
+  height: 100%;
 }
 
 </style>

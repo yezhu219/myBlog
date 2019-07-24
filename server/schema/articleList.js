@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
-const db=require('../db')
+const db = require('../db')
+let ObjectId =  mongoose.Schema.Types.ObjectId 
 
 const sfHotDaySchema = new mongoose.Schema({
   title: String,
@@ -8,6 +9,7 @@ const sfHotDaySchema = new mongoose.Schema({
     type: Date,
     default: Date.now()
   },
+  aId:ObjectId,
   desImg: String,
   authorImg: String,
   author: String,
