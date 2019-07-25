@@ -32,8 +32,7 @@ export default {
     }
   },
   async asyncData({$axios}) {
-    console.log("++++++++++++++++++++++++++")
-    const {data} = await $axios.get('http://localhost:3000/v1/articleList')
+    const {data} = await $axios.get('http://localhost:3001/v1/articleList')
     return { list: data.list,count:data.count }
   },
 };

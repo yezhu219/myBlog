@@ -2,7 +2,7 @@ const Koa = require('koa')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 
-const { router } = require('./interface/api')
+// const { router } = require('./interface/api')
 
 const app = new Koa()
 
@@ -27,7 +27,7 @@ async function start() {
     await nuxt.ready()
   }
 
-app.use(router.routes()).use(router.allowedMethods())
+// app.use(router.routes()).use(router.allowedMethods())
 
   app.use((ctx) => {
     ctx.status = 200

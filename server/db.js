@@ -51,5 +51,5 @@ db.on('disconnected', () => {
     console.log('链接成功！！！！')
    
   })
-
+ 
   module.exports = db

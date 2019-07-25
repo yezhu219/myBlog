@@ -24,9 +24,7 @@ module.exports = {
       let req = ctx.request.query
       let id = mongoose.Types.ObjectId(req.id)
       let data = await articleListModel.findOne({ "_id": id })
-      console.log(data.content,'++++++++++++++++1')
       data.content=md.toHTML(data.content)
-      console.log(data.content,'++++++++++++++++')
       ctx.body = {
         error: 0,
         data

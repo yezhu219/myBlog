@@ -11,6 +11,10 @@
 
 ![avatar](./assets/images/word/setCSS.png)
 
+- 注册全局过滤器  
+1. 在plugin文件夹下新建filters.js，将文件中过滤器注册为全局过滤器
+2. 在nuxt.config.js文件plugin添加filters.js
+
 
 ## 数据库设计
  1. 文章列表 articleList
