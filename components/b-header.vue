@@ -89,8 +89,8 @@ export default {
       position: relative;
       top: 2px;
       width: 100%;
-      height: 37px;
-      line-height: 37px;
+      height: 40px;
+      line-height: 40px;
       vertical-align: middle;
       border: 1px solid #dedede;
       border-radius: 0 5px 5px 0;
