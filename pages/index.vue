@@ -1,5 +1,5 @@
 <template>
-  <div class="container bg-f6 ">
+  <div class="container bg-8d ">
     <el-row :gutter="20">
       <el-col :span="18" ><b-article v-for="item in list" :key="item._id" :article="item"></b-article></el-col>
       <el-col :span="6" >

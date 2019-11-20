@@ -113,7 +113,9 @@
    background-color: #f6f6f6;
  }
 
-
+ .bg-8d {
+   background-color: #8ddad5;
+ }
 
  /*颜色*/
  .c-fff {
@@ -131,6 +133,7 @@
  .c-999 {
    color: #999;
  }
+ 
 
  /*间距*/
 
@@ -179,15 +182,21 @@
 
  /*盒子阴影*/
  .box-s1 {
-   box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.1);
+   box-shadow: 1px 1px 15px 3px rgba(141,218,213, 0.1);
    border-radius: 5px;
  }
  .box-s2 {
-   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+   box-shadow: 1px 4px 8px 0px rgba(141,218,213, 0.1);
  }
 
  /*边框*/
 
  .line-b {
-   border-bottom: 1px solid #dedede;
+   border-bottom: 1PX solid #dedede;
+ }
+
+ /*鼠标小手*/
+
+ .cp {
+   cursor: pointer;
  }

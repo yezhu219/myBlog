@@ -1,5 +1,5 @@
 <template>
-  <div class="blog">
+  <div class="blog bg-8d">
     <b-header></b-header>
     <nuxt />
     <b-footer></b-footer>

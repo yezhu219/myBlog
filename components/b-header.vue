@@ -1,30 +1,32 @@
 <template>
   <el-row class="b-header text-c fz24 c-666">
     <el-col :span="6" class="logo">
-      <a href>
-        <img src="../assets/images/img/logo.png" width="100%" alt="汪兵的BLOG" />
+      <a href="/">
+        <h1>
+          <img src="../assets/images/img/logo.png" width="100%" alt="汪兵的BLOG" />
+        </h1>
       </a>
     </el-col>
     <el-col :span="14" v-show="showNav">
       <el-row>
         <el-col :span="5"><nuxt-link to="/">首页</nuxt-link></el-col>
-        <el-col :span="5"><nuxt-link to="/learn">学习</nuxt-link></el-col>
-        <el-col :span="5"><nuxt-link to="/jotting">随笔</nuxt-link></el-col>
-        <el-col :span="5"><nuxt-link to="/share">分享</nuxt-link></el-col>
+        <el-col :span="5"><nuxt-link to="/learn">文章</nuxt-link></el-col>
+        <el-col :span="5"><nuxt-link to="/jotting">成长记录</nuxt-link></el-col>
+        <el-col :span="5"><nuxt-link to="/share">插件收藏</nuxt-link></el-col>
         <!-- <el-col :span="4">关于我</el-col> -->
       </el-row>
     </el-col>
     <el-col :span="4" v-show="showNav">
-      <i class="el-icon-search fz32 mr-10" @click="showNav=false"></i>
+      <i class="el-icon-search fz32 mr-10 cp" @click="showNav=false"></i>
     </el-col>
     <el-col :span="10" v-show="!showNav" class="search">
       <el-row class="pr">
         <el-col :span="22">
           <input type="text" v-model="searchValue" placeholder="请输入搜索内容" class="c-666" />
-          <i class="el-icon-close close fz30" @click="showNav=true"></i>
+          <i class="el-icon-close close fz30 cp" @click="showNav=true"></i>
         </el-col>
         <el-col :span="2">
-          <span class="fz18 btn-search bg-de">搜索</span>
+          <span class="fz18 btn-search bg-de cp">搜索</span>
         </el-col>
       </el-row>
     </el-col>
@@ -87,7 +89,7 @@ export default {
     .btn-search {
       display: inline-block;
       position: relative;
-      top: 2px;
+      top: 1px;
       width: 100%;
       height: 40px;
       line-height: 40px;
